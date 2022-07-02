@@ -64,19 +64,24 @@
                 font-weight: bold;
              font-size: 15px;
             }  
-            .loremlorem{
+            
+            mark.black{
                 margin-top: 50px;
                 margin-bottom: 30px;
                 text-align: center;
                 font-size: 50px;
                 font-weight: bold;
                 font-family: Arial, Helvetica, sans-serif;
-            }
-            mark.black{
                 color: black;
                 background: none;
             }
             mark.blue{
+                margin-top: 50px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-size: 50px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
                 color: #0d6efd;
                 background: none;
             }
@@ -240,6 +245,11 @@
                 overflow-y: scroll;
                 overflow-x: scroll;
             }
+            .aa{
+                margin-top: 60px;
+                margin-bottom: 50px;
+                margin-left: 370px;
+            }
         </style>
 
     </head>
@@ -267,8 +277,8 @@
         <div>
             <hr>
         </div>
-        <div>
-            <p class="loremlorem">
+        <div class="aa">
+            <p id="loremlorem">
                 <mark class="black">Lorem Ipsum Dolor </mark><mark class="blue">Lorem Ipsum</mark>
             </p>
         </div>
@@ -284,11 +294,11 @@
         </div>
         <div class="button">
             <div class="b1div" >
-                <button class="b1">Button 1</button>
+                <button class="b1" onclick='document.getElementById("loremlorem").innerHTML="You clicked button 1"'>Button 1</button>
             </div>
             <div class="b2div">
                
-                <button class="b2">Button 2</button>
+                <button class="b2"  onclick='document.getElementById("loremlorem").innerHTML="You clicked button 2"'>Button 2</button>
             </div>
         </div>
         <div class="allign">
